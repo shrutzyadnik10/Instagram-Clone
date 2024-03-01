@@ -47,5 +47,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any questions or feedback, feel free to contact us at [your.email@example.com](mailto:yadnikshruti07@gmail.com).
+For any questions or feedback, feel free to contact us at [Shruti Yadnik](mailto:yadnikshruti07@gmail.com).
 
