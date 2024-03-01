@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "start": "nodemon app.js",
+    "api-docs": "apidoc -i ./ -o api-docs/"
+  },
+  "dependencies": {
+    "apidoc": "^0.52.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.5.0",
+    "morgan": "^1.10.0",
+    "move-file": "^1.2.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.19",
+    "pretty-error": "^4.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
