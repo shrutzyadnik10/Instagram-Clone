@@ -33,7 +33,7 @@ This project is a full-stack Instagram clone developed to replicate the core fea
 
 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/shrutzyadnik10/instagram-clone.git`
+1. Clone the repository: `git clone https://github.com/shrutzyadnik10/Instagram-Clone.git`
 2. Install dependencies Steps: `cd instagram-backend-master && npm install` `cd instagram-clone-main && npm install`
 3. Start the frontend and backend servers: `npm start:frontend (instagram-clone-main`) and `npm start:backend (instagram-backend-master`)
 
