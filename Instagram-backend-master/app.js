@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const userModel = require("./schema/user");
 const postModel = require("./schema/post");
 var cors = require("cors");
-mongoose.connect("mongodb+srv://Shubham:2903@cluster0.zfrj8.mongodb.net/test");
+mongoose.connect("mongodb+srv://shrutz_yadnik:Abc1234@shruti-db.0dnpcs8.mongodb.net/");
 
 app.use(cors());
 
@@ -57,12 +57,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-/**
- * @api {post} /addPost Add Instagram Post
- * @apiDescription Add Instagram Post
- * @apiParamExample Postman:
- * profile_image: 'file'
- */
+
 app.post("/addPost", async (req, res) => {
   const im = new ImageUpload();
   const data = req.body;
@@ -74,12 +69,7 @@ app.post("/addPost", async (req, res) => {
   res.json(__resp);
 });
 
-/**
- * @api {get} /get dashboard post
- * @apiDescription using this we can get the dashboard post with userId
- * @apiParamExample Postman:
- * _id: id
- */
+
 app.get(`/getDashboarPost/:id`, async (req, res) => {
   const userFollowing = await userModel.findOne({
     _id: req.params.id,
@@ -196,16 +186,7 @@ app.post("/unfollow", async (req, res) => {
   res.json([_s, _g]);
 });
 
-/**
- * @api {post} /Test
- * @apiDescription Add Instagram Post
- * @apiParamExample Postman:
- * first_name: 'Shubham',
- * last_name: 'lilawala',
- * user_name: 'Shubham',
- * email: 'shubhamlilawala691@gmail.com',
- * password: '29032'
- */
+
 app.post("/addUser", async (req, res) => {
   const im = new ImageUpload();
   const data = req.body;
@@ -217,13 +198,7 @@ app.post("/addUser", async (req, res) => {
   var __resp = await _s.save();
   res.json(__resp);
 });
-/**
- * @api {post} /getUser Add Instagram Post
- * @apiDescription Add Instagram Post
- * @apiParamExample Postman:
- * user_name: 'Shubham',
- * password: '29032'
- */
+
 app.post("/getUser", async (req, res) => {
   const data = await userModel.find({
     $and: [{ username: req.body.username }, { password: req.body.password }],
